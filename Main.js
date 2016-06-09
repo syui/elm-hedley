@@ -11376,7 +11376,10 @@ Elm.Config.Model.make = function (_elm) {
    $Signal = Elm.Signal.make(_elm);
    var _op = {};
    var Model = F2(function (a,b) {    return {backendConfig: a,error: b};});
-   var initialBackendConfig = {backendUrl: "",githubClientId: "",name: "",hostname: ""};
+   var initialBackendConfig = {backendUrl: "https://div-syui.pantheonsite.io"
+                              ,githubClientId: "051523e381865ad2155b"
+                              ,name: "gh-pages"
+                              ,hostname: "syui.github.io"};
    var initialModel = {backendConfig: initialBackendConfig,error: false};
    var BackendConfig = F4(function (a,b,c,d) {    return {backendUrl: a,githubClientId: b,name: c,hostname: d};});
    return _elm.Config.Model.values = {_op: _op,BackendConfig: BackendConfig,initialBackendConfig: initialBackendConfig,Model: Model,initialModel: initialModel};
