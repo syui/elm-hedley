@@ -11854,8 +11854,8 @@ Elm.Config.make = function (_elm) {
    $Time = Elm.Time.make(_elm);
    var _op = {};
    var cacheTtl = 5 * $Time.second;
-   var prodBackend = {backendUrl: "http://dev-syui.pantheonsite.io/",githubClientId: "051523e381865ad2155b",name: "gh-pages",hostname: "syui.github.io"};
-   var localBackend = {backendUrl: "http://dev-syui.pantheonsite.io/",githubClientId: "051523e381865ad2155b",name: "local",hostname: "localhost"};
+   var prodBackend = {backendUrl: "http://dev-syui.pantheonsite.io",githubClientId: "051523e381865ad2155b",name: "gh-pages",hostname: "syui.github.io"};
+   var localBackend = {backendUrl: "http://dev-syui.pantheonsite.io",githubClientId: "051523e381865ad2155b",name: "local",hostname: "localhost"};
    var backends = _U.list([localBackend,prodBackend]);
    return _elm.Config.values = {_op: _op,localBackend: localBackend,prodBackend: prodBackend,backends: backends,cacheTtl: cacheTtl};
 };
